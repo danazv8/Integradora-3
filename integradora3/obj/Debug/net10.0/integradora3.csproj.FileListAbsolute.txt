@@ -1,0 +1,15 @@
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\bin\Debug\net10.0\integradora3.exe
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\bin\Debug\net10.0\integradora3.deps.json
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\bin\Debug\net10.0\integradora3.runtimeconfig.json
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\bin\Debug\net10.0\integradora3.dll
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\bin\Debug\net10.0\integradora3.pdb
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.AssemblyInfoInputs.cache
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.AssemblyInfo.cs
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.csproj.CoreCompileInputs.cache
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.sourcelink.json
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.dll
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\refint\integradora3.dll
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.pdb
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\integradora3.genruntimeconfig.cache
+C:\Users\dazvi\source\repos\caja-registradora\integradora3\integradora3\obj\Debug\net10.0\ref\integradora3.dll
