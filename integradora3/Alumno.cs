@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using integradora3;
 
-public class Alumno : Persona
+public class Alumno : Persona, IExportable
 
 {
-    public string Nombre { get; set; }
+    
     public int Legajo { get; private set; }
     public decimal Nota1 { get; private set; }
     public decimal Nota2 { get; private set; }
@@ -63,6 +63,17 @@ public class Alumno : Persona
             Nota2 = nota2;
             return true;
         }
+    }
+    public override string Presentarse()
+    {
+        return $"Hola, soy {Nombre} alumno con legajo: {Legajo}";
+
+    }
+
+    public string ExportarLinea()
+    {
+        return $"Alumno ; {Legajo} ; {Nombre} ; {Promedio()}";
+
     }
 }
 

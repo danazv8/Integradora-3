@@ -1,4 +1,5 @@
-﻿
+﻿using integradora3;
+
 List<Alumno> listaAlumnos = new List<Alumno>();
 
 int opcion;
@@ -21,15 +22,18 @@ do
             Console.Write("Ingrese el nombre del alumno: ");
             string nombre = Console.ReadLine();
 
+            Console.WriteLine("Ingrese DNI del alumno: ");
+            int dni = int.Parse(Console.ReadLine());
+
             Console.Write("Ingrese el legajo del alumno: ");
             int legajo = int.Parse(Console.ReadLine());
 
-            Alumno nuevoAlumno = new Alumno(nombre, legajo);
+            Alumno nuevoAlumno = new Alumno(nombre, dni, legajo);
 
-            Console.WriteLine("Ingrese la primera nota del alumno (0-10): ");
+            Console.WriteLine("Ingrese la primera nota del alumno: ");
             decimal nota1 = decimal.Parse(Console.ReadLine());
 
-            Console.WriteLine("Ingrese la segunda nota del alumno (0-10): ");
+            Console.WriteLine("Ingrese la segunda nota del alumno: ");
             decimal nota2 = decimal.Parse(Console.ReadLine());
 
             bool notasCargadas = nuevoAlumno.CargarNotas(nota1, nota2);
@@ -66,10 +70,11 @@ do
                     encontrado = true;
                     break;
                 }
-                if (!encontrado)
-                {
-                    Console.WriteLine("No exite alumno con ese legajo");
-                }
+                
+            }
+            if (!encontrado)
+            {
+                Console.WriteLine("No exite alumno con ese legajo");
             }
             break;
 
@@ -118,6 +123,35 @@ do
 
 }
 while (opcion != 6);
+
+List<Persona> personas = new List<Persona>();
+
+personas.Add(new Alumno("Marta", 123321, 1234));
+personas.Add(new Profesor("Marto", 321123, "Programacion"));
+personas.Add(new Preceptor("Marti", 76543));
+
+foreach (Persona persona in personas)
+{
+    Console.WriteLine(persona.Presentarse());
+
+}
+
+List<Materia> materias = new List<Materia>();
+materias.Add(new Materia("PW1", "PROGRAMACION", 123));
+materias.Add(new Materia("BD", "Bases de Datos", 321));
+
+List<IExportable> exportables = new List<IExportable>();
+exportables.AddRange(listaAlumnos);
+Profesor profesor = new Profesor("Marta", 987654, "Programacion");
+exportables.Add(profesor);
+exportables.AddRange(materias);
+Console.WriteLine("\n ---EXPORTACION---");
+
+foreach (IExportable elemento in exportables)
+{
+    Console.WriteLine(elemento.ExportarLinea());
+
+}
 //Alumno alumno1 = new Alumno("Pepito", 1, 6, 6);
 //Alumno alumno2 = new Alumno("Pepita", 2, 9, 9);
 //Alumno alumno1 = new Alumno("Pepito", 1);
